@@ -1,9 +1,12 @@
-from threading import Lock, Thread
+from threading import Thread
+from threading import Lock
 import time
+
+DATA = 100
 
 
 def list_data():
-    for i in range(101):
+    for i in range(DATA + 1):
         yield i
 
 

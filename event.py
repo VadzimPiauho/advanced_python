@@ -1,11 +1,12 @@
-from threading import Thread, Event
+from threading import Thread
+from threading import Event
 import time
 
 DATA = 100
 
 
 def list_data():
-    for i in range(DATA+1):
+    for i in range(DATA + 1):
         yield i
 
 

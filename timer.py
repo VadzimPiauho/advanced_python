@@ -6,7 +6,7 @@ TIME = 0.1
 
 
 def list_data():
-    for i in range(DATA+1):
+    for i in range(DATA + 1):
         yield i
 
 

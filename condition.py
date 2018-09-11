@@ -1,11 +1,12 @@
-from threading import Thread, Condition
+from threading import Thread
+from threading import Condition
 import time
 
 DATA = 100
 
 
 def list_data():
-    for i in range(DATA+1):
+    for i in range(DATA + 1):
         yield i
 
 
