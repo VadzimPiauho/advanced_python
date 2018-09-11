@@ -1,5 +1,5 @@
-from threading import Thread
 from threading import Semaphore
+from threading import Thread
 import time
 
 DATA = 100
