@@ -4,7 +4,7 @@ import math
 
 
 def isPrime(number):
-    return number > 1 and all(number%i for i in itertools.islice(itertools.count(2), int(math.sqrt(number)-1)))    # noqa
+    return number > 1 and all(number % i for i in itertools.islice(itertools.count(2), int(math.sqrt(number) - 1)))    # noqa
 
 
 async def number_is_prime(start_num, end_num, ):
