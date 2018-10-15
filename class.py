@@ -11,10 +11,10 @@ class Money(object):
         self.currency = currency
 
     def __str__(self):
-        return f"{self.value} {self.currency}"
+        return "{} {}".format(self.value, self.currency)
 
     def __repr__(self):
-        return f"{self.value} {self.currency}"
+        return "{} {}".format(self.value, self.currency)
 
     def __add__(self, other):
         if isinstance(other, Money):
