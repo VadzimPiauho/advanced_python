@@ -6,7 +6,7 @@ API_key = "b040dcab9c3a195f42200439"
 
 
 class Money(object):
-    def __init__(self, value, currency = "USD"):
+    def __init__(self, value, currency="USD"):
         self.value = value
         self.currency = currency
 
