@@ -55,7 +55,7 @@ def find_optimal_list(item, COST_TOTAL):
 
 for lng in range(0, len(ITEMS) + 1):
     for item in itertools.combinations(ITEMS, lng):
-        res= find_optimal_list(item, COST_TOTAL)
+        res = find_optimal_list(item, COST_TOTAL)
 
         if res:
             RESULT = item
