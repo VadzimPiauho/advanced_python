@@ -84,6 +84,7 @@ celerybeat-schedule
 # Environments
 .env
 .venv
+.py_env
 env/
 venv/
 ENV/
@@ -103,5 +104,10 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-#pycharm
+#IDE configs
 .idea/
+.vscode/
+
+# .NET
+.vs
+*.suo
