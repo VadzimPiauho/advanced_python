@@ -1,2 +1,4 @@
 flake8
 pydocstyle
+cython
+./fib_c_extension

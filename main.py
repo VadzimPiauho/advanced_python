@@ -1,15 +1,20 @@
 from benchmark import Profiler
-from counter import count_fib
+
 from fib_python.fibonacci import fibonacci as fib_python
-import fib_cython
+from fib_cython.fibonacci import fibonacci as fib_cython
+from fib import fib_fast as fib_python_ext
 
-COUNT = 100
 
+COUNT = 10
 
 with Profiler() as p:
     # print("Python_fibonacci")
-    count_fib(fib_python, COUNT)
+    fib_python(COUNT)
 
 with Profiler() as p:
     # print("Cython_fibonacci")
-    count_fib(fib_cython.fibonacci.fibonacci, COUNT)
+    fib_cython(COUNT)
+
+with Profiler() as p:
+    # print("C Python_extension")
+    fib_python_ext(COUNT)
