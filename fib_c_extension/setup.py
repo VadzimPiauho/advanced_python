@@ -1,4 +1,5 @@
-from distutils.core import setup, Extension
+from distutils.core import Extension
+from distutils.core import setup
 
 module1 = Extension('fib', sources=['fibmodule.c'])
 

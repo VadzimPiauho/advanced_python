@@ -1,7 +1,7 @@
 from benchmark import Profiler
 
-from fib_python.fibonacci import fibonacci as fib_python
 from fib_cython.fibonacci import fibonacci as fib_cython
+from fib_python.fibonacci import fibonacci as fib_python
 from fib import fib_fast as fib_python_ext
 
 
